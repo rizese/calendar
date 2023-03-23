@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+      th {
+        background-color: #ccc;
+      }
+      .weekday {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ month_name }} {{ year }}</h1>
+    {{ calendar }}
+  </body>
+</html>
