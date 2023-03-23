@@ -1,6 +1,13 @@
 <html>
   <head>
     <style>
+      body {
+        text-align: center;
+        font-family: 'Arial Narrow', 'Arial', sans-serif;
+      }
+      h1 {
+        text-transform: uppercase;
+      }
       table {
         border-collapse: collapse;
         width: 100%;
@@ -20,7 +27,9 @@
     </style>
   </head>
   <body>
-    <h1>{{ month_name }} {{ year }}</h1>
-    {{ calendar }}
+    <h1>March 2023</h1>
+    <table>
+      [[0, 0, 1, 2, 3, 4, 5], [6, 7, 8, 9, 10, 11, 12], [13, 14, 15, 16, 17, 18, 19], [20, 21, 22, 23, 24, 25, 26], [27, 28, 29, 30, 31, 0, 0]]
+    </table>
   </body>
 </html>

@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=11in, height=8in, initial-scale=1.0" />
+    <title>{{ month }} {{ year }} Calendar</title>
+    <meta name="description" content="Calendar for {{ month }} {{ year }}" />
+    <meta name="author" content="rizese" />
+    <style>
+      html,
+      body {
+        text-align: center;
+        font-family: 'Arial Narrow', 'Arial', sans-serif;
+        color: #000;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 5px;
+      }
+      h1 {
+        font-family: 'Arial', sans-serif;
+        text-transform: uppercase;
+        font-size: 40pt;
+        padding: 0;
+        margin: 0;
+      }
+      table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        height: calc(100% - 100px);
+        width: 100%;
+      }
+      td,
+      th {
+        font-size: 16pt;
+        border: 2px solid black;
+        padding: 5px;
+        width: calc(100% / 7);
+      }
+      td {
+        text-align: left;
+        height: 100px;
+        vertical-align: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ month }} {{ year }}</h1>
+    <table>
+      <thead>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tues</th>
+        <th>Wed</th>
+        <th>Thurs</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </thead>
+      <tbody>
+        {{ weeks }}
+      </tbody>
+    </table>
+  </body>
+</html>

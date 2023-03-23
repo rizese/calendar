@@ -16,6 +16,8 @@ template = templateEnv.get_template("calendar_template.html")
 cal = calendar.monthcalendar(args.year, args.month)
 cal_html = template.render(month=calendar.month_name[args.month], year=args.year, cal=cal)
 
+print(cal)
+
 # Write the HTML to a file
 with open(f"{args.month}_{args.year}_calendar.html", "w") as f:
     f.write(cal_html)
