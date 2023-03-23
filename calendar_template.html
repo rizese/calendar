@@ -16,7 +16,8 @@
         height: 100%;
         width: 100%;
         padding: 0;
-        margin: 5px;
+        margin: 0;
+        font-size: 0px;
       }
       h1 {
         font-family: 'Arial', sans-serif;
@@ -24,6 +25,9 @@
         font-size: 40pt;
         padding: 0;
         margin: 0;
+      }
+      main {
+        padding: 5px;
       }
       table {
         border-collapse: collapse;
@@ -47,19 +51,21 @@
   </head>
   <body>
     <h1>{{ month }} {{ year }}</h1>
-    <table>
-      <thead>
-        <th>Sun</th>
-        <th>Mon</th>
-        <th>Tues</th>
-        <th>Wed</th>
-        <th>Thurs</th>
-        <th>Fri</th>
-        <th>Sat</th>
-      </thead>
-      <tbody>
-        {{ weeks }}
-      </tbody>
-    </table>
+    <main>
+      <table>
+        <thead>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thurs</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </thead>
+        <tbody>
+          {{ weeks }}
+        </tbody>
+      </table>
+    </main>
   </body>
 </html>
