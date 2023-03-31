@@ -23,3 +23,12 @@ install:
 calendar:
 	$(PYTHON) generate_calendar.py
 
+calendar-config:
+	cd ./generate-holiday-config && npm run generate-config && cp holiday-config.json ../
+
+.PHONY: calendar-config
+
+
+initialize-generate-config:
+	cd ./generate-holiday-config && npm install
+

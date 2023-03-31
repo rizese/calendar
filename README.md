@@ -1,4 +1,4 @@
-# Monthly Calendar Generator
+# Monthly Calendar Generator 🗓️
 
 This is a Python script that generates an HTML calendar for a given month and year, with a simple CSS style. You can use this script to create printable calendars for personal or business use.
 
