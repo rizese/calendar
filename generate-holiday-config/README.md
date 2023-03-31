@@ -3,7 +3,7 @@
 This node project generates a JSON configuration file with the dates of holidays for the next five years in the United States. It uses the date-holidays package to calculate the holidays.
 
 All the python holiday packages were overengineered and/or wrong on US dates. So that's why theres Node in this parent Python project
-¯\_(ツ)\_/¯
+¯\\\_(ツ)\_/¯
 
 ## Installation
 
@@ -28,3 +28,9 @@ npm run generate-config
 ```
 
 This will generate a file named `holiday-config.json` in the this directory. If the `holiday-config.json` file already exists, it will be deleted and a new file will be created. The file will contain a JSON array with the dates and names of holidays for the next five years.
+
+Move this file up to the parent directory for use with the calendar generator
+
+```
+cp holiday-config.json ..
+```
