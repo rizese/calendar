@@ -1,0 +1,135 @@
+{
+  "holidays": [
+    {
+      "title": "New Year's Day",
+      "description": "Celebrates the start of the year on January 1st",
+      "date": {
+        "month": 1,
+        "day": 1
+      }
+    },
+    {
+      "title": "Martin Luther King Jr. Day",
+      "description": "Honors the civil rights leader on the third Monday in January",
+      "date": {
+        "month": 1,
+        "day": 17,
+        "weekday": "Monday",
+        "offset": 0
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "description": "Celebrates love and affection on February 14th",
+      "date": {
+        "month": 2,
+        "day": 14
+      }
+    },
+    {
+      "title": "Presidents' Day",
+      "description": "Honors George Washington, Abraham Lincoln, and other US presidents on the third Monday in February",
+      "date": {
+        "month": 2,
+        "weekday": "Monday",
+        "quantity": 3
+      }
+    },
+    {
+      "title": "St. Patrick's Day",
+      "description": "Celebrates Irish culture and heritage on March 17th",
+      "date": {
+        "month": 3,
+        "day": 17
+      }
+    },
+    {
+      "title": "Easter Sunday",
+      "description": "Celebrates the resurrection of Jesus on the first Sunday after the first full moon on or after the vernal equinox",
+      "date": {
+        "month": 4,
+        "day": 17,
+        "weekday": "Sunday",
+        "offset": 0
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "description": "Honors the men and women who died while serving in the US military on the last Monday in May",
+      "date": {
+        "month": 5,
+        "weekday": "Monday",
+        "offset": -1
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "description": "Commemorates the end of slavery in the United States on June 19th",
+      "date": {
+        "month": 6,
+        "day": 19
+      }
+    },
+    {
+      "title": "Independence Day",
+      "description": "Celebrates the adoption of the Declaration of Independence on July 4th",
+      "date": {
+        "month": 7,
+        "day": 4
+      }
+    },
+    {
+      "title": "Labor Day",
+      "description": "Honors the contributions of American workers on the first Monday in September",
+      "date": {
+        "month": 9,
+        "weekday": "Monday",
+        "offset": 0
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "description": "Honors Christopher Columbus on the second Monday in October",
+      "date": {
+        "month": 10,
+        "day": 10,
+        "weekday": "Monday",
+        "offset": 0
+      }
+    },
+    {
+      "title": "Halloween",
+      "description": "Celebrates costumes, candy, and all things spooky on October 31st",
+      "date": {
+        "month": 10,
+        "day": 31
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "description": "Honors veterans of the armed forces and those killed in the country’s wars",
+      "date": {
+        "month": 11,
+        "day": 11
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "description": "Celebrates the harvest and family on the fourth Thursday in November",
+      "date": {
+        "month": 11,
+        "day": 24,
+        "weekday": "Thursday",
+        "offset": 0
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "description": "Celebrates the birth of Jesus on December 25th",
+      "date": {
+        "month": 12,
+        "day": 25
+      }
+    }
+  ]
+}

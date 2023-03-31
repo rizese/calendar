@@ -1,0 +1,14 @@
+{
+  "name": "generate-dates",
+  "version": "1.0.0",
+  "description": "JSON config generator for holidays and special dates",
+  "main": "index.js",
+  "scripts": {
+    "generate-config": "node index.js"
+  },
+  "author": "rizese",
+  "license": "ISC",
+  "dependencies": {
+    "date-holidays": "^3.19.0"
+  }
+}
