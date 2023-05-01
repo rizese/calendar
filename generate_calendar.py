@@ -1,3 +1,5 @@
+import platform
+import subprocess
 import calendar
 import jinja2
 import argparse
@@ -28,6 +30,26 @@ def find_holiday_in_config(year, month, day):
                 holiday_date.get("day") == str(day).zfill(2)):
             return holiday
     return None
+
+
+def get_default_printer_name():
+    system = platform.system()
+    printer_name = "<Unknown, possibly nonexistent, default printer>"
+    try:
+        if system == "Windows":
+            output = subprocess.check_output(
+                ["wmic", "printer", "where", "default='true'", "get", "name"], stderr=subprocess.DEVNULL).decode()
+            printer_name = output.split("\n")[1].strip()
+        elif system == "Linux" or system == "Darwin":
+            output = subprocess.check_output(
+                ["lpstat", "-d"], stderr=subprocess.DEVNULL).decode()
+            printer_name = output.split(":")[1].strip()
+        else:
+            print(f"Unsupported platform: {system}")
+        return printer_name
+    except Exception as e:
+        print(f"Couldn't find a default printer")
+        return printer_name
 
 
 def generate_calendar(year, month):
@@ -73,28 +95,43 @@ def save_calendar(year, month, calendar_table):
 
     print(f'Calendar written to {filename}')
 
+    return filename
 
+
+def print_calendar(filename):
+    user_input = input(f"Do you want to print the file '{filename}'? (y/n): ")
+    default_printer_name = get_default_printer_name()
+
+    if user_input.lower() == 'y':
+        try:
+            if os.name == 'nt':  # Windows
+                os.system(f'print {filename}')
+            elif os.name == 'posix':  # Unix-based (e.g., macOS, Linux)
+                os.system(f'lpr {filename}')
+            else:
+                raise Exception("Printing is not supported on this platform.")
+            print(
+                f"Successfully sent '{filename}' to the '{default_printer_name}.")
+        except Exception as e:
+            print(f"Sorry, error occurred while printing '{filename}': {e}")
+
+
+# todo - make the argument order flexible
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Generate a monthly calendar in HTML format')
     parser.add_argument('year', type=int, help='The year of the calendar (default: current year)',
                         nargs='?', default=datetime.datetime.now().year)
-    parser.add_argument('month', type=int, help='The month of the calendar (1-12) (default: current month)',
-                        nargs='?', default=datetime.datetime.now().month)
+    parser.add_argument('month', type=int, help='The month of the calendar (1-12) (default: upcoming month)',
+                        nargs='?', default=datetime.datetime.now().month + 1)
     args = parser.parse_args()
-
-    # usage_message = "Usage: \n\
-    #         python generate_calendar.py[year][month]\n \
-    #     Parameters: \n\
-    #         year(optional): The year of the calendar(default: current year) \n\
-    #         month(optional): The month of the calendar(1-12)(default: current month)\n"
 
     usage_message = """Usage:
     python generate_calendar.py [year] [month]
 
 Parameters:
     year (optional): The year of the calendar (default: current year)
-    month (optional): The month of the calendar (1-12) (default: current month)
+    month (optional): The month of the calendar (1-12) (default: upcoming month)
 """
 
     if not 1 <= args.month <= 12:
@@ -105,4 +142,5 @@ Parameters:
             f"Error: Year must be 4 digits. Exiting without calendar generation.\n\n{usage_message}\n")
     else:
         calendar_html = generate_calendar(args.year, args.month)
-        save_calendar(args.year, args.month, calendar_html)
+        filename = save_calendar(args.year, args.month, calendar_html)
+        print_calendar(filename)
