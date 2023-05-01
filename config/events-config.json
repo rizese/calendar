@@ -1,0 +1,51 @@
+{
+  "events": [
+    {
+      "title": "New Year's Day",
+      "type": "holiday",
+      "date": {
+        "month": 1,
+        "day": 1,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "John's Birthday",
+      "type": "birthday",
+      "date": {
+        "month": 3,
+        "day": 14,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Wedding Anniversary",
+      "type": "anniversary",
+      "date": {
+        "month": 5,
+        "day": 18,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Custom Event",
+      "type": "custom",
+      "date": {
+        "year": 2023,
+        "month": 6,
+        "day": 10,
+        "repeats": "never"
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "month": 11,
+        "week": 4,
+        "dayOfWeek": "thursday",
+        "repeats": "yearly"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["holiday", "birthday", "anniversary", "custom"]
+          },
+          "date": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "type": "integer"
+              },
+              "month": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 12
+              },
+              "day": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 31
+              },
+              "week": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "dayOfWeek": {
+                "type": "string",
+                "enum": ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+              },
+              "repeats": {
+                "type": "string",
+                "enum": ["never", "yearly"]
+              }
+            },
+            "required": ["month", "repeats"],
+            "oneOf": [
+              {
+                "required": ["day"]
+              },
+              {
+                "required": ["week", "dayOfWeek"]
+              }
+            ]
+          }
+        },
+        "required": ["title", "type", "date"]
+      }
+    }
+  },
+  "required": ["events"]
+}
