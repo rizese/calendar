@@ -8,13 +8,15 @@ import os
 import json
 
 # Load holiday_config file
-with open('./holiday-config.json', 'r') as f:
+with open('./config/holiday-config.json', 'r') as f:
     holiday_config = json.load(f)
 
 # Set the first day of the week to Sunday (this is not default)
 calendar.setfirstweekday(calendar.SUNDAY)
 
 day_template = "<number>{{day_number}}</number><p>{{holiday}}</p>"
+
+unknown_printer =  "<Unknown, possibly nonexistent, default printer>"
 
 
 def day_template_render(day_number, holiday=""):
@@ -34,7 +36,7 @@ def find_holiday_in_config(year, month, day):
 
 def get_default_printer_name():
     system = platform.system()
-    printer_name = "<Unknown, possibly nonexistent, default printer>"
+    printer_name = unknown_printer
     try:
         if system == "Windows":
             output = subprocess.check_output(
@@ -102,7 +104,9 @@ def print_calendar(filename):
     user_input = input(f"Do you want to print the file '{filename}'? (y/n): ")
     default_printer_name = get_default_printer_name()
 
-    if user_input.lower() == 'y':
+    if default_printer_name == unknown_printer:
+        print(f"Error: Couldn't find a printer")
+    elif user_input.lower() == 'y':
         try:
             if os.name == 'nt':  # Windows
                 os.system(f'print {filename}')
