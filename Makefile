@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help clean install calendar-config next-months-calendar test
+.PHONY: help clean install calendar calendar-config next-months-calendar test
 
 VENV_DIR := .venv
 PYTHON := $(VENV_DIR)/bin/python3
@@ -22,6 +22,9 @@ clean:
 
 install:
 	$(PIP) install -r requirements.txt
+
+calendar:
+	$(PYTHON) generate_calendar.py
 
 next-months-calendar:
 	$(PYTHON) generate_calendar.py
