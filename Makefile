@@ -22,6 +22,7 @@ clean:
 
 install:
 	$(PIP) install -r requirements.txt
+	make install-calendar-config
 
 calendar:
 	$(PYTHON) generate_calendar.py
