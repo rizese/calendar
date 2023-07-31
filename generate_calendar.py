@@ -8,7 +8,7 @@ import os
 import json
 
 # Load holiday_config file
-with open('./holiday-config.json', 'r') as f:
+with open('./config/holiday-config.json', 'r') as f:
     holiday_config = json.load(f)
 
 # Set the first day of the week to Sunday (this is not default)

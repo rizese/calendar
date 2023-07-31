@@ -1,0 +1,1066 @@
+{
+  "events": [
+    {
+      "title": "New Year's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "01",
+        "day": "01"
+      }
+    },
+    {
+      "title": "New Year's Day (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "01",
+        "day": "02"
+      }
+    },
+    {
+      "title": "Martin Luther King Jr. Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "01",
+        "day": "16"
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "02",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Washington's Birthday",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "02",
+        "day": "20"
+      }
+    },
+    {
+      "title": "St. Patrick's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "03",
+        "day": "17"
+      }
+    },
+    {
+      "title": "Easter Sunday",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "04",
+        "day": "09"
+      }
+    },
+    {
+      "title": "Tax Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "04",
+        "day": "18"
+      }
+    },
+    {
+      "title": "Administrative Professionals Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "04",
+        "day": "26"
+      }
+    },
+    {
+      "title": "Mother's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "05",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "05",
+        "day": "29"
+      }
+    },
+    {
+      "title": "Father's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "06",
+        "day": "18"
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "06",
+        "day": "19"
+      }
+    },
+    {
+      "title": "Independence Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "07",
+        "day": "04"
+      }
+    },
+    {
+      "title": "Labor Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "09",
+        "day": "04"
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "10",
+        "day": "09"
+      }
+    },
+    {
+      "title": "Halloween",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "10",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Veterans Day (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "11",
+        "day": "10"
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "11",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "11",
+        "day": "23"
+      }
+    },
+    {
+      "title": "Day after Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "11",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "12",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "12",
+        "day": "25"
+      }
+    },
+    {
+      "title": "New Year's Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2023",
+        "month": "12",
+        "day": "31"
+      }
+    },
+    {
+      "title": "New Year's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "01",
+        "day": "01"
+      }
+    },
+    {
+      "title": "Martin Luther King Jr. Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "01",
+        "day": "15"
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "02",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Washington's Birthday",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "02",
+        "day": "19"
+      }
+    },
+    {
+      "title": "St. Patrick's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "03",
+        "day": "17"
+      }
+    },
+    {
+      "title": "Easter Sunday",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "03",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Tax Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "04",
+        "day": "15"
+      }
+    },
+    {
+      "title": "Administrative Professionals Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "04",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Mother's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "05",
+        "day": "12"
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "05",
+        "day": "27"
+      }
+    },
+    {
+      "title": "Father's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "06",
+        "day": "16"
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "06",
+        "day": "19"
+      }
+    },
+    {
+      "title": "Independence Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "07",
+        "day": "04"
+      }
+    },
+    {
+      "title": "Labor Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "09",
+        "day": "02"
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "10",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Halloween",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "10",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Election Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "11",
+        "day": "05"
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "11",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "11",
+        "day": "28"
+      }
+    },
+    {
+      "title": "Day after Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "11",
+        "day": "29"
+      }
+    },
+    {
+      "title": "Christmas Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "12",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "12",
+        "day": "25"
+      }
+    },
+    {
+      "title": "New Year's Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2024",
+        "month": "12",
+        "day": "31"
+      }
+    },
+    {
+      "title": "New Year's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "01",
+        "day": "01"
+      }
+    },
+    {
+      "title": "Martin Luther King Jr. Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "01",
+        "day": "20"
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "02",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Washington's Birthday",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "02",
+        "day": "17"
+      }
+    },
+    {
+      "title": "St. Patrick's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "03",
+        "day": "17"
+      }
+    },
+    {
+      "title": "Tax Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "04",
+        "day": "15"
+      }
+    },
+    {
+      "title": "Easter Sunday",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "04",
+        "day": "20"
+      }
+    },
+    {
+      "title": "Administrative Professionals Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "04",
+        "day": "23"
+      }
+    },
+    {
+      "title": "Mother's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "05",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "05",
+        "day": "26"
+      }
+    },
+    {
+      "title": "Father's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "06",
+        "day": "15"
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "06",
+        "day": "19"
+      }
+    },
+    {
+      "title": "Independence Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "07",
+        "day": "04"
+      }
+    },
+    {
+      "title": "Labor Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "09",
+        "day": "01"
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "10",
+        "day": "13"
+      }
+    },
+    {
+      "title": "Halloween",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "10",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "11",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "11",
+        "day": "27"
+      }
+    },
+    {
+      "title": "Day after Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "11",
+        "day": "28"
+      }
+    },
+    {
+      "title": "Christmas Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "12",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "12",
+        "day": "25"
+      }
+    },
+    {
+      "title": "New Year's Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2025",
+        "month": "12",
+        "day": "31"
+      }
+    },
+    {
+      "title": "New Year's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "01",
+        "day": "01"
+      }
+    },
+    {
+      "title": "Martin Luther King Jr. Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "01",
+        "day": "19"
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "02",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Washington's Birthday",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "02",
+        "day": "16"
+      }
+    },
+    {
+      "title": "St. Patrick's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "03",
+        "day": "17"
+      }
+    },
+    {
+      "title": "Easter Sunday",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "04",
+        "day": "05"
+      }
+    },
+    {
+      "title": "Tax Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "04",
+        "day": "15"
+      }
+    },
+    {
+      "title": "Administrative Professionals Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "04",
+        "day": "22"
+      }
+    },
+    {
+      "title": "Mother's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "05",
+        "day": "10"
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "05",
+        "day": "25"
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "06",
+        "day": "19"
+      }
+    },
+    {
+      "title": "Father's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "06",
+        "day": "21"
+      }
+    },
+    {
+      "title": "Independence Day (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "07",
+        "day": "03"
+      }
+    },
+    {
+      "title": "Independence Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "07",
+        "day": "04"
+      }
+    },
+    {
+      "title": "Labor Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "09",
+        "day": "07"
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "10",
+        "day": "12"
+      }
+    },
+    {
+      "title": "Halloween",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "10",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "11",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "11",
+        "day": "26"
+      }
+    },
+    {
+      "title": "Day after Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "11",
+        "day": "27"
+      }
+    },
+    {
+      "title": "Christmas Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "12",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "12",
+        "day": "25"
+      }
+    },
+    {
+      "title": "New Year's Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2026",
+        "month": "12",
+        "day": "31"
+      }
+    },
+    {
+      "title": "New Year's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "01",
+        "day": "01"
+      }
+    },
+    {
+      "title": "Martin Luther King Jr. Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "01",
+        "day": "18"
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "02",
+        "day": "14"
+      }
+    },
+    {
+      "title": "Washington's Birthday",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "02",
+        "day": "15"
+      }
+    },
+    {
+      "title": "St. Patrick's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "03",
+        "day": "17"
+      }
+    },
+    {
+      "title": "Easter Sunday",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "03",
+        "day": "28"
+      }
+    },
+    {
+      "title": "Tax Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "04",
+        "day": "15"
+      }
+    },
+    {
+      "title": "Administrative Professionals Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "04",
+        "day": "21"
+      }
+    },
+    {
+      "title": "Mother's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "05",
+        "day": "09"
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "05",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Juneteenth (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "06",
+        "day": "18"
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "06",
+        "day": "19"
+      }
+    },
+    {
+      "title": "Father's Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "06",
+        "day": "20"
+      }
+    },
+    {
+      "title": "Independence Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "07",
+        "day": "04"
+      }
+    },
+    {
+      "title": "Independence Day (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "07",
+        "day": "05"
+      }
+    },
+    {
+      "title": "Labor Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "09",
+        "day": "06"
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "10",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Halloween",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "10",
+        "day": "31"
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "11",
+        "day": "11"
+      }
+    },
+    {
+      "title": "Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "11",
+        "day": "25"
+      }
+    },
+    {
+      "title": "Day after Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "11",
+        "day": "26"
+      }
+    },
+    {
+      "title": "Christmas Day (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "12",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "12",
+        "day": "24"
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "12",
+        "day": "25"
+      }
+    },
+    {
+      "title": "New Year's Day (substitute day)",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "12",
+        "day": "31"
+      }
+    },
+    {
+      "title": "New Year's Eve",
+      "type": "holiday",
+      "date": {
+        "year": "2027",
+        "month": "12",
+        "day": "31"
+      }
+    }
+  ]
+}
