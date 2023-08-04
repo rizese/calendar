@@ -10,31 +10,136 @@
       }
     },
     {
-      "title": "John's Birthday",
-      "type": "birthday",
+      "title": "Martin Luther King Jr. Day",
+      "type": "holiday",
       "date": {
-        "month": 3,
+        "month": 1,
+        "week": 3,
+        "dayOfWeek": "monday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Valentine's Day",
+      "type": "holiday",
+      "date": {
+        "month": 2,
         "day": 14,
         "repeats": "yearly"
       }
     },
     {
-      "title": "Wedding Anniversary",
-      "type": "anniversary",
+      "title": "Washington's Birthday",
+      "type": "holiday",
       "date": {
-        "month": 5,
-        "day": 18,
+        "month": 2,
+        "week": 3,
+        "dayOfWeek": "monday",
         "repeats": "yearly"
       }
     },
     {
-      "title": "Custom Event",
-      "type": "custom",
+      "title": "St. Patrick's Day",
+      "type": "holiday",
       "date": {
-        "year": 2023,
+        "month": 3,
+        "day": 17,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Tax Day",
+      "type": "holiday",
+      "date": {
+        "month": 4,
+        "day": 15,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Administrative Professionals Day",
+      "type": "holiday",
+      "date": {
+        "month": 4,
+        "week": "last",
+        "dayOfWeek": "wednesday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Mother's Day",
+      "type": "holiday",
+      "date": {
+        "month": 5,
+        "week": 2,
+        "dayOfWeek": "sunday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Memorial Day",
+      "type": "holiday",
+      "date": {
+        "month": 5,
+        "week": "last",
+        "dayOfWeek": "monday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Father's Day",
+      "type": "holiday",
+      "date": {
         "month": 6,
-        "day": 10,
-        "repeats": "never"
+        "week": 3,
+        "dayOfWeek": "sunday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Juneteenth",
+      "type": "holiday",
+      "date": {
+        "month": 6,
+        "day": 19,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Independence Day",
+      "type": "holiday",
+      "date": {
+        "month": 7,
+        "day": 4,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Columbus Day",
+      "type": "holiday",
+      "date": {
+        "month": 10,
+        "week": 2,
+        "dayOfWeek": "monday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Halloween",
+      "type": "holiday",
+      "date": {
+        "month": 10,
+        "day": 31,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Veterans Day",
+      "type": "holiday",
+      "date": {
+        "month": 11,
+        "day": 11,
+        "repeats": "yearly"
       }
     },
     {
@@ -44,6 +149,34 @@
         "month": 11,
         "week": 4,
         "dayOfWeek": "thursday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Day after Thanksgiving Day",
+      "type": "holiday",
+      "date": {
+        "month": 11,
+        "week": 4,
+        "dayOfWeek": "friday",
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Christmas Eve",
+      "type": "holiday",
+      "date": {
+        "month": 12,
+        "day": 24,
+        "repeats": "yearly"
+      }
+    },
+    {
+      "title": "Christmas Day",
+      "type": "holiday",
+      "date": {
+        "month": 12,
+        "day": 25,
         "repeats": "yearly"
       }
     }
