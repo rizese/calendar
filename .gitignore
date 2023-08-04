@@ -81,3 +81,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# NPM
+node_modules/
