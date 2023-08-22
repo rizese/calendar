@@ -6,6 +6,8 @@ import argparse
 import datetime
 import os
 import json
+from html2image import Html2Image
+
 
 # Load holiday_config file
 with open('./config/holiday-config.json', 'r') as f:
@@ -23,7 +25,6 @@ def day_template_render(day_number, holiday=""):
     formatted_day = f"<number>{day_number}</number><p>{holiday}</p>"
     return formatted_day
 
-
 def find_holiday_in_config(year, month, day):
     for holiday in holiday_config.get(str(year), []):
         holiday_date = holiday.get("date", {})
@@ -33,6 +34,22 @@ def find_holiday_in_config(year, month, day):
             return holiday
     return None
 
+
+def convert_html_to_image_and_print(filename):
+    output_path = '/'.join(filename.split('/')[:-1])
+    image_filename = filename.replace('.html', '.png').split('/')[-1]
+    hti = Html2Image(output_path=output_path, size=(1150, 600))
+
+    try:
+        # Convert HTML to Image
+        hti.screenshot(html_file=filename, save_as=image_filename)
+        # Print the Image using lpr command
+        result = subprocess.check_call(['lpr', image_filename])
+        if result != 0:
+            raise Exception(f"Error occurred while executing 'lpr {image_filename}'")
+    except Exception as e:
+        print(f"{e}")
+        raise
 
 def get_default_printer_name():
     system = platform.system()
@@ -52,7 +69,6 @@ def get_default_printer_name():
     except Exception as e:
         print(f"Couldn't find a default printer")
         return printer_name
-
 
 def generate_calendar(year, month):
     cal = calendar.monthcalendar(year, month)
@@ -84,7 +100,6 @@ def generate_calendar(year, month):
 
     return calendar_table
 
-
 def save_calendar(year, month, calendar_table):
     # Create a calendars subdirectory if it doesn't exist
     if not os.path.exists('calendars'):
@@ -99,7 +114,6 @@ def save_calendar(year, month, calendar_table):
 
     return filename
 
-
 def print_calendar(filename):
     user_input = input(f"Do you want to print the file '{filename}'? (y/n): ")
     default_printer_name = get_default_printer_name()
@@ -111,13 +125,14 @@ def print_calendar(filename):
             if os.name == 'nt':  # Windows
                 os.system(f'print {filename}')
             elif os.name == 'posix':  # Unix-based (e.g., macOS, Linux)
-                os.system(f'lpr {filename}')
+                # convert_html_to_pdf_and_print(filename)
+                convert_html_to_image_and_print(filename)
             else:
                 raise Exception("Printing is not supported on this platform.")
             print(
-                f"Successfully sent '{filename}' to the '{default_printer_name}.")
+                f"Successfully sent to the '{default_printer_name}.")
         except Exception as e:
-            print(f"Sorry, error occurred while printing '{filename}': {e}")
+            print(f"{e}")
 
 
 # todo - make the argument order flexible

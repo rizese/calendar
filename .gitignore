@@ -1,5 +1,5 @@
 # Project specific file
-calendars/*-Calendar.html
+calendars/*
 
 # Virtual environment
 .venv
