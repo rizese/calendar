@@ -11,8 +11,8 @@ help:
 	@echo "  make clean                     Remove generated files"
 	@echo "  make install                   Install project dependencies"
 	@echo "  make next-months-calendar      Generate a calendar HTML file for the upcoming month in the current year"
-	@echo "  make calendar-config           Generate a holiday-config.json file. See the README.md in ./generate-holiday-config for more"
-	@echo "  make install-calendar-config   Install dependencies for ./generate-holiday-config"
+	@echo "  make calendar                  Generate a calendar HTML file for the upcoming month in the current year"
+	@echo "  make calendar-config           Generate a holiday-config.json file. Requires NodeJS & NPM. See the README.md in ./generate-holiday-config for more"
 	@echo "  make test                      Run unit tests"
 
 clean:
@@ -27,14 +27,14 @@ install:
 calendar:
 	$(PYTHON) generate_calendar.py
 
+calendar:
+	$(PYTHON) generate_calendar.py
+
 next-months-calendar:
 	$(PYTHON) generate_calendar.py
 
 calendar-config:
 	cd ./generate-holiday-config && npm run generate-config && cp holiday-config.json ../config
-
-install-calendar-config:
-	cd ./generate-holiday-config && npm install
 
 test:
 	$(PYTHON) -m unittest discover -s tests

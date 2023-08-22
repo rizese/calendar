@@ -31,9 +31,17 @@
                 "maximum": 31
               },
               "week": {
-                "type": "integer",
-                "minimum": 1,
-                "maximum": 5
+                "oneOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 5
+                  },
+                  {
+                    "type": "string",
+                    "enum": ["last"]
+                  }
+                ]
               },
               "dayOfWeek": {
                 "type": "string",
