@@ -27,9 +27,6 @@ install:
 calendar:
 	$(PYTHON) generate_calendar.py
 
-calendar:
-	$(PYTHON) generate_calendar.py
-
 next-months-calendar:
 	$(PYTHON) generate_calendar.py
 

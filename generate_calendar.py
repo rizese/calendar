@@ -18,12 +18,13 @@ calendar.setfirstweekday(calendar.SUNDAY)
 
 day_template = "<number>{{day_number}}</number><p>{{holiday}}</p>"
 
-unknown_printer =  "<Unknown, possibly nonexistent, default printer>"
+unknown_printer = "<Unknown, possibly nonexistent, default printer>"
 
 
 def day_template_render(day_number, holiday=""):
     formatted_day = f"<number>{day_number}</number><p>{holiday}</p>"
     return formatted_day
+
 
 def find_holiday_in_config(year, month, day):
     for holiday in holiday_config.get(str(year), []):
@@ -38,7 +39,7 @@ def find_holiday_in_config(year, month, day):
 def convert_html_to_image_and_print(filename):
     output_path = '/'.join(filename.split('/')[:-1])
     image_filename = filename.replace('.html', '.png').split('/')[-1]
-    hti = Html2Image(output_path=output_path, size=(1150, 600))
+    hti = Html2Image(output_path=output_path, size=(1150, 800))
 
     try:
         # Convert HTML to Image
@@ -46,10 +47,12 @@ def convert_html_to_image_and_print(filename):
         # Print the Image using lpr command
         result = subprocess.check_call(['lpr', image_filename])
         if result != 0:
-            raise Exception(f"Error occurred while executing 'lpr {image_filename}'")
+            raise Exception(
+                f"Error occurred while executing 'lpr {image_filename}'")
     except Exception as e:
         print(f"{e}")
         raise
+
 
 def get_default_printer_name():
     system = platform.system()
@@ -69,6 +72,7 @@ def get_default_printer_name():
     except Exception as e:
         print(f"Couldn't find a default printer")
         return printer_name
+
 
 def generate_calendar(year, month):
     cal = calendar.monthcalendar(year, month)
@@ -100,6 +104,7 @@ def generate_calendar(year, month):
 
     return calendar_table
 
+
 def save_calendar(year, month, calendar_table):
     # Create a calendars subdirectory if it doesn't exist
     if not os.path.exists('calendars'):
@@ -113,6 +118,7 @@ def save_calendar(year, month, calendar_table):
     print(f'Calendar written to {filename}')
 
     return filename
+
 
 def print_calendar(filename):
     user_input = input(f"Do you want to print the file '{filename}'? (y/n): ")
